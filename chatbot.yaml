@@ -1,0 +1,38 @@
+name: faq-ivr-solution
+
+entryPoint: main.sc
+
+botEngine: v2
+language: ru
+
+tests:
+  include:
+    - test.xml
+
+nlp:
+  intentNoMatchThresholds:
+    phrases: 0
+    patterns: 0
+  considerContextDepthInStateSelectionV2: false
+
+customTags:
+  - src/tags/count/counterWithTransition.json
+  - src/tags/count/countCallAttempt.json
+  - src/tags/answer/answer.json
+  - src/tags/answer/addPause.json
+  - src/tags/answer/utcGreeting.json
+  - src/tags/other/startCallSession.json
+  - src/tags/other/hangUp.json
+  - src/tags/analytics/setCallResult.json
+  - src/tags/analytics/reportData.json
+  - src/tags/analytics/setAutomationStatus.json
+  - src/tags/analytics/setScenarioAction.json
+  - src/tags/analytics/setSessionTopic.json
+  - src/tags/analytics/setSessionTopicFAQ.json
+  - src/tags/repeat/repeatable.json
+  - src/tags/repeat/repeat.json
+  - src/tags/transfer/transferWithWorkingHours.json
+  - src/tags/transfer/isTransferError.json 
+  - src/tags/transfer/getTransferReceiverByTopic.json
+  - src/tags/transfer/setTransferReceiverByDefault.json
+  

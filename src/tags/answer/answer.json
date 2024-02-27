@@ -1,0 +1,44 @@
+{
+    "tagName": "Answer",
+    "customTagType": "JS",
+    "scenarioFile": "tags/answer/answer.js",
+    "functionName": "answer",
+    "caption": {
+        "ru": "Ответ из базы знаний",
+        "eng": "Answer from knowledge base"
+    },
+    "description": {
+        "ru": "Этот блок выводит ответ из базы знаний в соответствии с заданной логикой.",
+        "eng": "This block sends an answer from the knowledge base according to the specified logic."
+    },
+    "parameters": [
+        {
+            "name": "mode",
+            "type": "string",
+            "required": true,
+            "localization": {
+                "ru": "Логика выбора ответа",
+                "eng": "Answer selection logic"
+
+            },
+            "description": {
+                "ru": "Логика, по которой выбирается формулировка ответа. Возможные значения:\n• по номеру сессии\n• случайно\n• по порядку\n• все",
+                "eng": "The logic for selecting the answer phrase. Possible values:\n• by session number\n• next\n• random\n• all"
+            }
+        },
+        {
+            "name": "key",
+            "type": "string",
+            "required": false,
+            "localization": {
+                "ru": "Название вопроса",
+                "eng": "Question name"
+
+            },
+            "description": {
+                "ru": "По умолчанию ответ берется из вопроса, который соответствует интенту, по которому бот попадает в шаг. Если вы хотите использовать другой ответ или не задали интент, укажите здесь название нужного вопроса из модуля «FAQ.Контент».",
+                "eng": "By default, the answer is taken from the question corresponding to the intent by which the bot enters this state. If you want to use an answer from elsewhere or haven’t used any intents, specify the name of the necessary question from the “FAQ.Контент” module."
+            }
+        }
+    ]
+}

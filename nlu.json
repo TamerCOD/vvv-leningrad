@@ -1,0 +1,1175 @@
+{
+  "project" : {
+    "id" : "new_faq_ivr-122987187-qjL",
+    "name" : "new_faq_ivr-122987187-qjL",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "transformer",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
+    },
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/SomethingElseYes",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ "{ [@anyWord] [@anyWord] @yes}" ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Приветствие/День",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "День"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Приветствие/Общее",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Общее"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что-то еще"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще да",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что-то еще да"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Перевод/Возможен",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Возможен"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Как я могу помочь привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как я могу помочь привет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Мат/МатДва",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "МатДва"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.FAQ/Root/Контактная информация",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "какая ваша почта?"
+    }, {
+      "text" : "есть телеграм?"
+    }, {
+      "text" : "есть ватсап?"
+    }, {
+      "text" : "есть вайбер?"
+    }, {
+      "text" : "какой у вас сайт?"
+    }, {
+      "text" : "адрес какой?"
+    }, {
+      "text" : "как с вами связаться?"
+    }, {
+      "text" : "Контактная информация"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.FAQ/Root/Программа лояльности",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "я слышал, что у вас есть какие-то специальные акции. Можете рассказать подробнее?"
+    }, {
+      "text" : "какие привилегии предоставляют участники программы лояльности?"
+    }, {
+      "text" : "какие у вас есть программы лояльности и акции?"
+    }, {
+      "text" : "Программа лояльности"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.FAQ/Root/Партнерство",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "мы хотели бы стать вашими поставщиками. Какие условия и требования для этого существуют?"
+    }, {
+      "text" : "у нас есть идея совместного проекта, который может быть интересен вашей компании. Как можно обсудить этот вопрос?"
+    }, {
+      "text" : "я представляю компанию, которая заинтересована в сотрудничестве с вашей фирмой. Какие возможности для партнерства у вас есть?"
+    }, {
+      "text" : "Партнерство"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Офтопик/Root/Кто ты",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "кто ты"
+    }, {
+      "text" : "бот или человек?"
+    }, {
+      "text" : "ты робот, искусственный интеллект или программа?"
+    }, {
+      "text" : "это искусственный интеллект или ты такой же как Siri?"
+    }, {
+      "text" : "можешь ли ты думать самостоятельно или ты программа?"
+    }, {
+      "text" : "ты создан компьютерными алгоритмами или я разговариваю с живым человеком?"
+    }, {
+      "text" : "ты реальный или искусственный?"
+    }, {
+      "text" : "ты робот или настоящий человек?"
+    }, {
+      "text" : "Кто ты"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Офтопик/Root/Как твои дела",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "как твои дела"
+    }, {
+      "text" : "как жизнь"
+    }, {
+      "text" : "как идут дела"
+    }, {
+      "text" : "что нового"
+    }, {
+      "text" : "как твои успехи"
+    }, {
+      "text" : "как проходит день"
+    }, {
+      "text" : "как твои дела поживают"
+    }, {
+      "text" : "как самочувствие"
+    }, {
+      "text" : "как день проходит"
+    }, {
+      "text" : "как поживаешь"
+    }, {
+      "text" : "Как твои дела"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Перевод на оператора/505/Хочу подать на вас в суд",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "У меня жалоба на работу ваших сотрудников"
+    }, {
+      "text" : "Хочу пожаловаться на сотрудника"
+    }, {
+      "text" : "У меня претензия"
+    }, {
+      "text" : "Хочу подать на вас в суд"
+    }, {
+      "text" : "Хочу оставить  претензию"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Перевод на оператора/505",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Приветствие",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Приветствие/Вечер",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Вечер"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Перевод",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Вступление",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Вступление"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Как я могу помочь",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как я могу помочь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Прощание",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Прощание"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще после ошибки",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что-то еще после ошибки"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Перевод/Невозможен",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "New question"
+    }, {
+      "text" : "Невозможен"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Невозможность перевода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Невозможность перевода"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Молчание",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Молчание/Положить трубку",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Положить трубку"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Молчание/Продолжить",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Продолжить"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Нужен оператор",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Нужен оператор"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Мат",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Мат/МатОдин",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "МатОдин"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Неправильно",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ты ошибся"
+    }, {
+      "text" : "Неправильно"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Спам",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Спам"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.FAQ/Root/Технические проблемы",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "технические проблемы"
+    }, {
+      "text" : "соедините с технической службой"
+    }, {
+      "text" : "соедините с поддержкой"
+    }, {
+      "text" : "мне нужна техподдержка"
+    }, {
+      "text" : "мне нужна помощь, ничего не работает"
+    }, {
+      "text" : "система не отвечает"
+    }, {
+      "text" : "помехи"
+    }, {
+      "text" : "проблемы в системе"
+    }, {
+      "text" : "не понимаем почему не работает"
+    }, {
+      "text" : "у нас бот не работает"
+    }, {
+      "text" : "Технические проблемы"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.FAQ/Root/Продукты услуги",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "что вы предлагаете своим клиентам?"
+    }, {
+      "text" : "какие сервисы доступны в вашей компании?"
+    }, {
+      "text" : "назовите основные услуги, которые можно получить у вас?"
+    }, {
+      "text" : "какие услуги у вас есть?"
+    }, {
+      "text" : "Продукты услуги"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Офтопик/Root/Что умеешь",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "расскажи, что ты можешь делать."
+    }, {
+      "text" : "какие у тебя возможности?"
+    }, {
+      "text" : "что находится в твоем арсенале?"
+    }, {
+      "text" : "какие команды ты понимаешь?"
+    }, {
+      "text" : "какие навыки у тебя есть?"
+    }, {
+      "text" : "что ты можешь предложить?"
+    }, {
+      "text" : "какие опции доступны?"
+    }, {
+      "text" : "что умеешь делать, чтобы помочь мне?"
+    }, {
+      "text" : "что ты умеешь делать?"
+    }, {
+      "text" : "Что умеешь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Повтори",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Повтори"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Оператор",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "оператор"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Спам",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "спам"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Некорректный ответ",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "ты ошибся"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Контент/Root/Глобальный фоллбек продолжить",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Глобальный фоллбек продолжить"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/HowCanIHelpYouHello",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ "{ [@anyWord] [@anyWord] @hello }" ],
+    "priority" : 0
+  }, {
+    "path" : "/Нет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "нет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Офтопик",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Перевод на оператора",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "name" : "hello",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : false
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "(привет* [привет]|привеет:привет|приивеет:привет|приветик|приветики|при вед:привед|здравствуй|здравствуй*|здрасьте|здрасти|high:хэй|эй:хэй|хай|хэлло*|халоу|хэлоу|здаров|шалом|hello|здарова|хелло|здаровеньки|здоровеньки|здрасте|салют|hi|приветствую|~добрый ~день|~добрый ~вечер|доброго времени суток|хеллоу|п р и в е т|здраствуй*|приве:привет|прив:привет|хаюшки)" ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "name" : "yes",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : false
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "[ну] [конечно|всё|все|вроде|пожалуй|возможно] (да|даа|lf|ага|агась|точно|угу|верно|ок|ok|окей|окай|okay|оке|именно|подтвержд*|йес) [да|конечно|конешно|канешна|всё|все|вроде|пожалуй|возможно]" ],
+      "value" : ""
+    }, {
+      "type" : "pattern",
+      "rule" : [ ],
+      "value" : ""
+    } ]
+  }, {
+    "entity" : {
+      "name" : "anyWord",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : false
+    },
+    "records" : [ {
+      "type" : "pattern",
+      "rule" : [ "(а*|б*|в*|г*|д*|е*|ё*|ж*|з*|и*|й*|к*|л*|м*|н*|о*|п*|р*|с*|т*|у*|ф*|х*|ц*|ч*|ш*|щ*|ъ*|ы*|ь*|э*|ю*|я*|да*|не*|a*|b*|c*|d*|e*|f*|g*|h*|i*|j*|k*|l*|m*|n*|o*|p*|q*|r*|s*|t*|u*|v*|w*|x*|y*|z*)" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Приветствие/День",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Добрый день!",
+      "markup" : "plain",
+      "key" : "_rl1kssc40"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Приветствие/Общее",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Здравствуйте!",
+      "markup" : "plain",
+      "key" : "_f8vwgxj4x"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Могу чем-то ещё помочь?",
+      "markup" : "plain",
+      "key" : "_ksuabrbw2"
+    }, {
+      "type" : "text",
+      "text" : "Могу помочь чем-то ещё?",
+      "markup" : "plain",
+      "key" : "_87got3v8n"
+    }, {
+      "type" : "text",
+      "text" : "Подскажите, чем-то ещё могу вам помочь?",
+      "markup" : "plain",
+      "key" : "_5g957rvtz"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще да",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Какой у вас вопрос?",
+      "markup" : "plain",
+      "key" : "_zodi7fphh"
+    }, {
+      "type" : "text",
+      "text" : "Подскажите, что вас интересует?",
+      "markup" : "plain",
+      "key" : "_pnjrh3um6"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Перевод/Возможен",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Для дальнейшей консультации, перевожу ваш звонок на специалиста. Пожалуйста, оставайтесь на линии.",
+      "markup" : "plain",
+      "key" : "_6rgqbrouw"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Как я могу помочь привет",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Да, здравствуйте! Чем могу помочь?",
+      "markup" : "plain",
+      "key" : "_ghnkgxppm"
+    }, {
+      "type" : "text",
+      "text" : "Здравствуйте! Какой у вас вопрос?",
+      "markup" : "plain",
+      "key" : "_4a5o0m8hm"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Мат/МатДва",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Я прошу прощения, если мой ответ вас расстроил. Давайте попробуем ещё раз? Чем могу помочь?",
+      "markup" : "plain",
+      "key" : "_g86acuoxg"
+    }, {
+      "type" : "text",
+      "text" : "Видимо, я не совсем верно вас понимаю ... Пожалуйста, перефразируйте вопрос. Я постараюсь помочь.",
+      "markup" : "plain",
+      "key" : "_33gnezes2"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.FAQ/Root/Контактная информация",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Вы всегда можете связаться с нами по номеру 8-800-000-00-00. Написать на нашу электронную почту - наша почта собака компания точка ру.  Или обратиться лично по адресу: город Москва, улица Улица, дом 3.",
+      "markup" : "plain",
+      "key" : "_g2xci073n"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.FAQ/Root/Программа лояльности",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "У нас всегда есть интересные акции и возможности для наших клиентов. Чтобы узнать о текущих акциях и программе лояльности, просто зайдите во вкладку Акции на нашем сайте - компания точка ком.",
+      "markup" : "plain",
+      "key" : "_14iu1mmya"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.FAQ/Root/Партнерство",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "По вопросам сотрудничества вы можете направить запрос на нашу почту -  наша почта собака компания точка ру. Коллеги изучат  ваш запрос и свяжутся с вами.",
+      "markup" : "plain",
+      "key" : "_c0cjylpt3"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Офтопик/Root/Кто ты",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Я умный голосовой ассистент, созданный для того, чтобы оперативно помогать вам найти ответы на ваши вопросы.",
+      "markup" : "plain",
+      "key" : "_7lw6lpnk8"
+    }, {
+      "type" : "text",
+      "text" : "Я электронный помощник. И моя задача - помочь вам, как можно быстрее, найти ответы на вопросы.",
+      "markup" : "plain",
+      "key" : "_g7pcu2lm7"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Офтопик/Root/Как твои дела",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Всё прекрасно! Работаем, трудимся. Спасибо, что спросили!",
+      "markup" : "plain",
+      "key" : "_ybk4af6bl"
+    }, {
+      "type" : "text",
+      "text" : "Отлично! Давайте и вам тоже чем-нибудь помогу, чтобы у вас было хорошее настроение.",
+      "markup" : "plain",
+      "key" : "_o40l2pt15"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Перевод на оператора/505/Хочу подать на вас в суд",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "",
+      "markup" : "plain"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Перевод на оператора/505",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Приветствие",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Приветствие/Вечер",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Добрый вечер!",
+      "markup" : "plain",
+      "key" : "_thx5m555r"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Перевод",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Вступление",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Это компания Just AI. Меня зовут Джей",
+      "markup" : "plain",
+      "key" : "_fjqc9dko4"
+    }, {
+      "type" : "text",
+      "text" : "Just AI. Меня зовут Джей",
+      "markup" : "plain",
+      "key" : "_g671xxjom"
+    }, {
+      "type" : "text",
+      "text" : "Это Just AI. Меня зовут Джей",
+      "markup" : "plain",
+      "key" : "_settm1duu"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Как я могу помочь",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Чем могу вам помочь?",
+      "markup" : "plain",
+      "key" : "_1tmh45u73"
+    }, {
+      "type" : "text",
+      "text" : "Подскажите, чем могу помочь?",
+      "markup" : "plain",
+      "key" : "_336w2lev6"
+    }, {
+      "type" : "text",
+      "text" : "Скажите, чем могу вам помочь?",
+      "markup" : "plain",
+      "key" : "_3ubhcgobi"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Прощание",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Спасибо за ваш звонок. До свидания!",
+      "markup" : "plain",
+      "key" : "_4g1nj71me"
+    }, {
+      "type" : "text",
+      "text" : "Благодарю за звонок. Всего доброго!",
+      "markup" : "plain",
+      "key" : "_4g71b78ge"
+    }, {
+      "type" : "text",
+      "text" : "Спасибо за звонок. Всего доброго, до свидания!",
+      "markup" : "plain",
+      "key" : "_firpffq7h"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Что-то еще после ошибки",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Чем-то еще могу сейчас помочь?",
+      "markup" : "plain",
+      "key" : "_82x9gd3p1"
+    }, {
+      "type" : "text",
+      "text" : "Подскажите, я могу помочь вам чем-то ещё?",
+      "markup" : "plain",
+      "key" : "_qq18dvo1q"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Перевод/Невозможен",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "К сожалению, в настоящий момент у специалиста, который может решить ваш вопрос нерабочее время. Вы можете перезвонить нам  в рабочее время  - с понедельника по пятницу с 10 до 18 часов по московскому времени или оставить заявку на нашем сайте.",
+      "markup" : "plain",
+      "key" : "_e5xtrt9um"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Невозможность перевода",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "К сожалению, сейчас не удается перевести ваш звонок. Приношу свои извинения. Пожалуйста, попробуйте перезвонить чуть позже.",
+      "markup" : "plain",
+      "key" : "_xiuekzx9a"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Молчание",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Молчание/Положить трубку",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Алло...говорите!",
+      "markup" : "plain",
+      "key" : "_gdhdmbqgh"
+    }, {
+      "type" : "text",
+      "text" : "Не слышу, пожалуйста, говорите громче.",
+      "markup" : "plain",
+      "key" : "_oaspn5tsf"
+    }, {
+      "type" : "text",
+      "text" : "Аллоо. Я вас не слышу.",
+      "markup" : "plain",
+      "key" : "_s4rrsn19u"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Молчание/Продолжить",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "К сожалению, вас не слышно, попробуйте перезвонить.",
+      "markup" : "plain",
+      "key" : "_7fsvwesgx"
+    }, {
+      "type" : "text",
+      "text" : "Я вас не слышу, перезвоните, пожалуйста.",
+      "markup" : "plain",
+      "key" : "_f0f2ps61w"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Нужен оператор",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Чтобы соединить вас с нужным специалистом, мне нужно понять ваш вопрос. Что вас интересует?",
+      "markup" : "plain",
+      "key" : "_e74s19k2c"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Мат",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Мат/МатОдин",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Понимаю, вероятно ваш вопрос очень эмоциональный. Я постараюсь вам помочь. Расскажите, что вас интересует?",
+      "markup" : "plain",
+      "key" : "_o7q0jmepz"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Неправильно",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Возможно, я вас не совсем понимаю. Уточните, пожалуйста, ваш вопрос.",
+      "markup" : "plain",
+      "key" : "_3f2rnwa1d"
+    }, {
+      "type" : "text",
+      "text" : "Извините, видимо, я неверно вас понимаю. Расскажите, пожалуйста, подробней, что вас интересует?",
+      "markup" : "plain",
+      "key" : "_v8ercorrv"
+    }, {
+      "type" : "text",
+      "text" : "Простите. Уточните, пожалуйста, еще раз, какая информация вам необходима.",
+      "markup" : "plain",
+      "key" : "_o69vanzvr"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Спам",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Извините, кажется, это спам-звонок. Я не могу занимать линию для подобных разговоров.",
+      "markup" : "plain",
+      "key" : "_zxopz8k0t"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.FAQ/Root/Технические проблемы",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Для решения вашего вопроса или проблемы, рекомендуем подробно описать вашу проблему   и отправить нам на электронную почту  -  support@support.com. Команда технической поддержки изучит ваш вопрос и поможет в решении возникшей ситуации.",
+      "markup" : "plain",
+      "key" : "_szn1727g4"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.FAQ/Root/Продукты услуги",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "А мы предлагаем широкий спектр продуктов и услуг. Чтобы получить более подробную информацию о каждом из них, вы можете посетить наш сайт - компания точка ком. Там представлена вся информация.",
+      "markup" : "plain",
+      "key" : "_mujaihd7m"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Офтопик/Root/Что умеешь",
+    "replies" : [ {
+      "type" : "text",
+      "text" : " Ммм, моя основная задача - помогать вам с ответами на вопросы, предоставлять информацию о наших продуктах и услугах. Просто скажите, что вас интересует и я постараюсь вам помочь.",
+      "markup" : "plain",
+      "key" : "_67b34kvlz"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Контент/Root/Глобальный фоллбек продолжить",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Ммм... Не очень хорошо было слышно, чем я могу вам помочь?",
+      "markup" : "plain",
+      "key" : "_zoh7iuzpk"
+    }, {
+      "type" : "text",
+      "text" : "Прощу прощения, не совсем понятно. Какой у вас вопрос?",
+      "markup" : "plain",
+      "key" : "_dzkz37abt"
+    }, {
+      "type" : "text",
+      "text" : "Ааа, пожалуйста, переформулируйте ваш вопрос. Я постараюсь помочь.",
+      "markup" : "plain",
+      "key" : "_moqx2u20e"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Офтопик",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Перевод на оператора",
+    "replies" : [ ]
+  } ],
+  "skills" : [ ]
+}

@@ -1,0 +1,46 @@
+{
+    "tagName": "ReportData",
+    "customTagType": "JS",
+    "scenarioFile": "tags/analytics/analytics.js",
+    "functionName": "reportData",
+    "caption": {
+        "ru": "Запись в отчет",
+        "eng": "Report record"
+    },
+    "description": {
+        "ru": "Этот блок добавляет в отчет по сессии информацию о текущем звонке.",
+        "eng": "This block records information about the current call to the session report."
+    },
+    "hint": {
+        "ru": "Записать информацию в отчет по сессии",
+        "eng": "Record information to session report"
+    },
+    "parameters": [
+        {
+            "name": "column",
+            "type": "string",
+            "required": true,
+            "localization": {
+                "ru": "Столбец",
+                "eng": "Column"
+            },
+            "description": {
+                "ru": "Заголовок столбца в отчете.",
+                "eng": "Column header in the report."
+            }
+        },
+        {
+            "name": "value",
+            "type": "string",
+            "required": true,
+            "localization": {
+                "ru": "Значение",
+                "eng": "Value"
+            },
+            "description": {
+                "ru": "Значение, которое нужно записать.",
+                "eng": "The value to be recorded."
+            }
+        }
+    ]
+}

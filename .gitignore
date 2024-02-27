@@ -1,0 +1,7 @@
+syntax: glob
+.orig
+build
+.idea
+*.iml
+modules
+.keep

@@ -1,0 +1,29 @@
+{
+    "tagName": "Pause",
+    "customTagType": "JS",
+    "scenarioFile": "tags/answer/answer.js",
+    "functionName": "addPause",
+    "caption": {
+        "ru": "Пауза",
+        "eng": "Pause"
+    },
+    "description": {
+        "ru": "Этот блок заставляет бота молчать в течение заданного количества времени.",
+        "eng": "This block makes the bot be silent for a specified amount of time."
+    },
+    "parameters": [
+        {
+            "name": "sec",
+            "type": "integer",
+            "required": false,
+            "localization": {
+                "ru": "Длительность, секунд",
+                "eng": "Length, seconds"
+            },
+            "description": {
+                "ru": "Сколько секунд бот будет молчать. По умолчанию 1 секунда.",
+                "eng": "The bot will be silent for this many seconds. The default value is 1 second."
+            }
+        }
+    ]
+}

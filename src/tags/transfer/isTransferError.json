@@ -1,0 +1,15 @@
+{
+    "tagName": "IsTransferError",
+    "customTagType": "JS",
+    "scenarioFile": "tags/transfer/transfer.js",
+    "functionName": "isTransferError",
+    "caption": {
+        "ru": "Проверка статуса перевода на оператора",
+        "eng": "Check switch to agent status"
+    },
+    "description": {
+        "ru": "Этот блок проверяет, удалось ли перевести звонок на оператора. Если да, то завершает звонок.",
+        "eng": "This block checks if the call has been successfully transferred to an agent. If yes, then it ends the call."
+    },
+    "parameters": []
+}

@@ -1,0 +1,29 @@
+{
+    "tagName": "SetCallResult",
+    "customTagType": "JS",
+    "scenarioFile": "tags/analytics/analytics.js",
+    "functionName": "setCallResult",
+    "caption": {
+        "ru": "Результат звонка",
+        "eng": "Call result"
+    },
+    "description": {
+        "ru": "Этот блок фиксирует результат, достигнутый в ходе звонка. Этот результат будет доступен в аналитике по проекту.",
+        "eng": "This block records the result achieved during the call. This result will be available in project analytics."
+    },
+    "parameters": [
+        {
+            "name": "value",
+            "type": "string",
+            "required": true,
+            "localization": {
+                "ru": "Название",
+                "eng": "Name"
+            },
+            "description": {
+                "ru": "Название результата. Оно будет записано в аналитику по проекту и в отчет по обзвону.",
+                "eng": "Result name. It will be recorded to project analytics and to the call campaign report."
+            }
+        }
+    ]
+}

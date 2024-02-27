@@ -1,0 +1,42 @@
+{
+    "tagName": "HangUp",
+    "customTagType": "JS",
+    "scenarioFile": "scripts/functions.js",
+    "functionName": "hangUp",
+    "caption": {
+        "ru": "Завершение звонка",
+        "eng": "End call"
+    },
+    "description": {
+        "ru": "После попадания в шаг с этим блоком бот завершит звонок.",
+        "eng": "The bot will end the call after triggering a state with this block."
+    },
+    "parameters": [
+        {
+            "name": "message",
+            "type": "string",
+            "required": false,
+            "localization": {
+                "ru": "Сообщение",
+                "eng": "Message"
+            },
+            "description": {
+                "ru": "Сообщение, которое отправит бот при тестировании в текстовом канале. В телефонном канале не учитывается.",
+                "eng": "The message sent by the bot when testing it in the text channel. Has no effect in the phone channel."
+            }
+        },
+        {
+            "name": "sec",
+            "type": "integer",
+            "required": false,
+            "localization": {
+                "ru": "Задержка, секунд",
+                "eng": "Delay, seconds"
+            },
+            "description": {
+                "ru": "Сколько секунд бот будет молчать, прежде чем завершить звонок. По умолчанию 1 секунда.",
+                "eng": "The bot will be silent for this many seconds before ending the call. The default value is 1 second."
+            }
+        }
+    ]
+}

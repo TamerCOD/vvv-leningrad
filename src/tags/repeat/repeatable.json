@@ -1,0 +1,19 @@
+{
+    "tagName": "Repeatable",
+    "customTagType": "JS",
+    "scenarioFile": "tags/repeat/repeat.js",
+    "functionName": "repeatable",
+    "caption": {
+        "ru": "Повторяемый шаг",
+        "eng": "Repeatable state"
+    },
+    "description": {
+        "ru": "Используйте этот блок, если хотите, чтобы бот мог обработать запрос пользователя повторить ответ, озвученный на этом шаге. В сценарии также должен быть шаг с блоком «Обработка запроса на повтор».",
+        "eng": "Use this block when you need the bot to be able to process the user’s request to repeat the answer given in this state. The script should also have a state with the “Handle repeat request” block."
+    },
+    "hint": {
+        "ru": "Включить возможность повторить ответ, озвученный на этом шаге",
+        "eng": "Enable repeating the answer given in this state"
+    },
+    "parameters": []
+}

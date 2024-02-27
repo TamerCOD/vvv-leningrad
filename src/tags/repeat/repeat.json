@@ -1,0 +1,19 @@
+{
+    "tagName": "Repeat",
+    "customTagType": "JS",
+    "scenarioFile": "tags/repeat/repeat.js",
+    "functionName": "repeat",
+    "caption": {
+        "ru": "Обработка запроса на повтор",
+        "eng": "Handle repeat request"
+    },
+    "description": {
+        "ru": "Используйте этот блок на шаге, в который пользователь может попасть, если попросит повторить последний ответ. Бот вернется на последний шаг, в котором есть блок «Повторяемый шаг», и заново выполнит все его реакции.",
+        "eng": "Use this block in the state that the user can access by asking to repeat the last answer. The bot will return to the last state with a “Repeatable state” block and re-execute all of its reactions."
+    },
+    "hint": {
+        "ru": "Повторить реакции из последнего шага, в котором есть блок «Повторяемый шаг»",
+        "eng": "Repeat the reactions from the last state with a “Repeatable state” block"
+    },
+    "parameters": []
+}

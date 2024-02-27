@@ -1,0 +1,33 @@
+{
+    "tagName": "StartCallSession",
+    "customTagType": "JS",
+    "scenarioFile": "scripts/functions.js",
+    "functionName": "startCallSession",
+    "caption": {
+        "ru": "Начало звонка",
+        "eng": "Begin call"
+    },
+    "description": {
+        "ru": "Используйте этот блок на стартовом шаге сценария, чтобы бот корректно начал телефонную сессию.",
+        "eng": "Use this block in the start state of your script. It will ensure that the session is initialized correctly."
+    },
+    "hint": {
+        "ru": "Используйте этот блок на стартовом шаге",
+        "eng": "Use this block in the start state"
+    },
+    "parameters": [
+        {
+            "name": "sec",
+            "type": "integer",
+            "required": false,
+            "localization": {
+                "ru": "Задержка, секунд",
+                "eng": "Delay, seconds"
+            },
+            "description": {
+                "ru": "Сколько секунд бот будет молчать, прежде чем перейдет к следующему блоку. По умолчанию 1 секунда.",
+                "eng": "The bot will be silent for this many seconds before moving on to the next block. The default value is 1 second."
+            }
+        }
+    ]
+}

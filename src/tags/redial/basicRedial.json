@@ -1,0 +1,33 @@
+{
+    "tagName": "BasicRedial",
+    "customTagType": "JS",
+    "scenarioFile": "tags/redial/redial.js",
+    "functionName": "redial",
+    "caption": {
+        "ru": "Базовый перезвон",
+        "eng": "Basic Redial"
+    },
+    "description": {
+        "ru": "Этот блок позволяет запланировать повторный звонок через указанное время с учетом настроек обзвона.",
+        "eng": "This block allows you to schedule a callback after the specified time, considering the dialer settings."
+    },
+    "hint": {
+        "ru": "Запланировать звонок через указанный промежуток времени",
+        "eng": "Schedule a callback after specified time interval"
+    },
+    "parameters": [
+        {
+            "name": "minutes",
+            "type": "integer",
+            "required": true,
+            "localization": {
+                "ru": "Количество минут",
+                "eng": "Number of minutes"
+            },
+            "description": {
+                "ru": "Число минут, через которое нужно перезвонить",
+                "eng": "The number of minutes after which the bot has to callback"
+            }
+        }
+    ]
+}
